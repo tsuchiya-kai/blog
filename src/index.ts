@@ -11,8 +11,8 @@ app.use((req: express.Request, res: express.Response, next: express.NextFunction
   next();
 });
 
-app.listen(4000, () => {
-  console.log("🚀Start on  localhost:4000");
+app.listen(3000, () => {
+  console.log("🚀Start on  localhost:3000");
 });
 
 import { PrismaClient } from "@prisma/client";
