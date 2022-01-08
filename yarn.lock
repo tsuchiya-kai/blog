@@ -483,6 +483,11 @@ cookie@0.4.1:
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.1.tgz#afd713fe26ebd21ba95ceb61f9a8116e50a537d1"
   integrity sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==
 
+create-next-app@^12.0.7:
+  version "12.0.7"
+  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-12.0.7.tgz#79cf12a1247dd28edd7931076f46780a7fd2be47"
+  integrity sha512-TVYs5h9LzPrNVrIXBJT1YEhP0qRJj9otq3e+SpUoqIas+CWxJeAVfLb95I4SlVxdTyjQwS03hIPvh2ZKceu5DA==
+
 create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"

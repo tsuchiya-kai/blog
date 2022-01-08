@@ -44,9 +44,9 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - .:/app
+      - ./src:/app
     working_dir: /app
-    command: yarn start
+    command: yarn dev
     networks:
       - default
     depends_on:
