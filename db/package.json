@@ -4,5 +4,12 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "prisma db seed --preview-feature",
     "prisma:dev": "run-s -l prisma:generate prisma:migrate prisma:seed"
+  },
+  "devDependencies": {
+    "prisma": "^3.7.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.7.0",
+    "yarn-run-all": "^3.1.1"
   }
 }
