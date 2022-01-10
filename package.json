@@ -29,7 +29,6 @@
   "dependencies": {
     "@prisma/client": "3.7.0",
     "@tsconfig/node16": "^1.0.2",
-    "create-next-app": "^12.0.7",
     "express": "^4.17.2",
     "ts-node-dev": "^1.1.8",
     "yarn-run-all": "^3.1.1"
