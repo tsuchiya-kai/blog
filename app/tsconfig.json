@@ -5,6 +5,6 @@
     "resolveJsonModule": true,
     "baseUrl": "app"
   },
-  "include": ["app/**/*.ts", "app/**/*.js"],
+  "include": ["src/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules"]
 }
