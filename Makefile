@@ -3,7 +3,7 @@ build:
 
 up:
 	yarn && docker-compose up -d
-	@echo ⚛️Runnning React http://localhost:3000
+	@echo ⚛️ Runnning React http://localhost:3000
 	
 ps:
 	docker-compose ps
