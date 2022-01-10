@@ -1,4 +1,6 @@
 {
+  "name": "app",
+  "version": "1.0.0",
   "scripts": {
     "start": "ts-node-dev --poll src/index.ts",
     "build": "tsc",
