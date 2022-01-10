@@ -15,28 +15,28 @@ app.listen(4000, () => {
   console.log("🚀Start on  localhost:4000");
 });
 
-import { PrismaClient } from "@prisma/client";
+// import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
+// const prisma = new PrismaClient();
 
-async function main() {
-  const allUsers = await prisma.user.findMany();
-  return allUsers;
-}
+// async function main() {
+//   const allUsers = await prisma.user.findMany();
+//   return allUsers;
+// }
 
-main()
-  .catch((e) => {
-    throw e;
-  })
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+// main()
+//   .catch((e) => {
+//     throw e;
+//   })
+//   .finally(async () => {
+//     await prisma.$disconnect();
+//   });
 
-//prismaを用いてユーザーを全て返す
-app.get("/prisma-users", async (_, res: express.Response) => {
-  const allUsers = await main();
-  res.send(JSON.stringify(allUsers));
-});
+// //prismaを用いてユーザーを全て返す
+// app.get("/prisma-users", async (_, res: express.Response) => {
+//   const allUsers = await main();
+//   res.send(JSON.stringify(allUsers));
+// });
 
 // ----- サンプル実装 ------- //
 
