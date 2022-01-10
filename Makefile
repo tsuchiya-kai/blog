@@ -2,8 +2,8 @@ build:
 	docker-compose build
 
 up:
-	yarn && docker-compose up -d
-	@echo 🚀Runnning http://localhost:4000
+	docker-compose up -d
+	@echo ⚛️ Runnning React http://localhost:3000
 	
 ps:
 	docker-compose ps
@@ -19,6 +19,9 @@ stop:
 
 generate:
 	yarn prisma:generate
+
+# migrate:
+# 	docker exec app yarn prisma:migrate
 
 lint:
 	yarn fix

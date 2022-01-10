@@ -1,5 +1,1 @@
-# docker_express_environment
-
-docker × express × GraphQL × Prisma 環境のボイラープレートを作りたい
-
-## 詳細
+yarn workspace と create-next-app の共存方法がわからなかったためいったん手留めとする
