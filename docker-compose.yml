@@ -44,8 +44,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./:/app:cached
-    working_dir: /app/app
+      - ./app:/app:cached
+    working_dir: /app
     # command: yarn dev
     networks:
       - default
