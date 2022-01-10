@@ -42,11 +42,11 @@ services:
       DEBUG: app:*
     tty: true
     ports:
-      - "4000:4000"
+      - "3000:3000"
     volumes:
       - ./app:/app:cached
     working_dir: /app
-    command: yarn start
+    command: yarn dev
     networks:
       - default
     depends_on:
