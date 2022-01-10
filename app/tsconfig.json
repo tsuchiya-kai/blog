@@ -3,8 +3,8 @@
   "compilerOptions": {
     "outDir": "./dist",
     "resolveJsonModule": true,
-    "baseUrl": "./src"
+    "baseUrl": "app"
   },
-  "include": ["src/**/*.ts", "src/**/*.js"],
+  "include": ["app/**/*.ts", "app/**/*.js"],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "prisma db seed --preview-feature",
+    "prisma:dev": "run-s -l prisma:generate prisma:migrate prisma:seed"
+  }
+}
