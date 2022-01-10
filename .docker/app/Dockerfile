@@ -1,2 +1,2 @@
-FROM node:14
-WORKDIR /usr/src
+FROM node:16-alpine
+WORKDIR /usr/src/app

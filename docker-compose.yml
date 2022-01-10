@@ -11,9 +11,9 @@ services:
       MYSQL_ROOT_PASSWORD: root
       TZ: "Asia/Tokyo"
     volumes:
-      - ./mysql/data:/var/lib/mysql
-      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
-      - ./mysql/init:/docker-entrypoint-initdb.d
+      - ./db/mysql/data:/var/lib/mysql
+      - ./db/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./db/mysql/init:/docker-entrypoint-initdb.d
     ports:
       - "3306:3306"
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
@@ -44,13 +44,14 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./src:/app
-    working_dir: /app
-    command: yarn dev
+      - ./:/app:cached
+    working_dir: /app/app
+    # command: yarn dev
     networks:
       - default
     depends_on:
       - mysql
+
 networks:
   default:
 # コンテナが削除されてもデータが消えずに保持される
